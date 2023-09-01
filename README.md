@@ -1,0 +1,2 @@
+# TechnoStudyTr Project
+# açıklama
