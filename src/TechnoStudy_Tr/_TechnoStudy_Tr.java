@@ -9,6 +9,7 @@ public class _TechnoStudy_Tr extends BaseDriver {
     public void AnasayfaKursDropdownMenuGoruntuleme_01()
     {
 
+
     }
 
     @Test
