@@ -1,4 +1,4 @@
-package TechnoStudy_Tr;
+package BugrahanYildiz;
 
 import Utility.BaseDriver;
 import Utility.MyFunc;
@@ -6,39 +6,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-
 import java.util.List;
 import java.util.Set;
 
-public class _TechnoStudy_Tr extends BaseDriver {
+
+public class SosyalMedyaErisim extends BaseDriver {
 
     @Test
-    public void AnasayfaKursDropdownMenuGoruntuleme_01()
-    {
-
-
-    }
-
-    @Test
-    public void AnasayfaCampusGiris_02 ()
-    {
-
-    }
-
-    @Test
-    public void AnasayfaKursBasvurusu_03 ()
-    {
-
-    }
-
-    @Test
-    public void AltMenuKurErisim_04 ()
-    {
-
-    }
-
-    @Test
-    public void AltMenuSosyalMedyaErisim_05 ()
+    public void AltMenuSosyalMedyaErisim_05()
     {
         driver.get("https://techno.study/tr/");
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -59,7 +34,7 @@ public class _TechnoStudy_Tr extends BaseDriver {
         for (String id : acilanWindowIDler) {
             MyFunc.Bekle(2);
             driver.switchTo().window(id);
-            System.out.println("Sayda Adı=" + driver.getTitle() + ", link=" + driver.getCurrentUrl());
+            System.out.println("Sayfa Adı=" + driver.getTitle() + ", link=" + driver.getCurrentUrl());
         }
 
         MyFunc.Bekle(2);
@@ -70,24 +45,4 @@ public class _TechnoStudy_Tr extends BaseDriver {
         }
         MyFunc.Bekle(2);
     }
-
-
-    @Test
-    public void TsLogoAnaSayfaYonlendirme_06 ()
-    {
-
-    }
-
-    @Test
-    public void KursDetayliBilgi_07 ()
-    {
-
-    }
-
-    @Test
-    public void KullanimSartlariSayfaErisim_08 ()
-    {
-
-    }
-
 }
