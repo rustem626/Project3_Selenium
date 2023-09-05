@@ -8,7 +8,7 @@ public class _TechnoStudy_Tr extends BaseDriver {
     @Test
     public void AnasayfaKursDropdownMenuGoruntuleme_01()
     {
-
+        System.out.println();
 
     }
 
