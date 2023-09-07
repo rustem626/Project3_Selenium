@@ -300,36 +300,29 @@ public class _TechnoStudy_Tr extends BaseDriver {
     public void KursDetayliBilgi_07 ()
     {
         driver.get("https://techno.study/tr/");
+        WebElement sdet=driver.findElement(By.linkText("SDET Yazılım Test Mühendisi"));
+        sdet.click();
 
-        List<WebElement> detaylibilgi=driver.findElements(By.linkText("Detaylı bilgi"));
-
-        // detaylı bilgi butonları gözüküyormu
-        for (WebElement d:detaylibilgi){
-            Assert.assertTrue(d.isDisplayed());
-        }
-
-        //herkursta aynı olan TechnoStudy logosu
-        WebElement technoStudy=driver.findElement(By.xpath("//img[@alt='TechnoStudy']"));
-        Assert.assertTrue(technoStudy.isDisplayed());
-
-        WebElement detay1=driver.findElement(By.xpath("(//a[@class='tn-atom'])[3]"));
-        detay1.click();
-        // Assert.assertTrue(technoStudy.isDisplayed());
+        Assert.assertTrue(driver.getCurrentUrl().contains("sdet"));
         driver.navigate().back();
 
-        WebElement detay2=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//a[@class='tn-atom'])[2]")));
-        detay2.click();
-        // Assert.assertTrue(technoStudy.isDisplayed());
+        WebElement androidApp=driver.findElement(By.linkText("Android Uygulama Geliştirme"));
+        androidApp.click();
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("androidapp"));
         driver.navigate().back();
 
+        WebElement veriBilimi=driver.findElement(By.linkText("Veri bilimi"));
+        veriBilimi.click();
 
-        WebElement detay3=driver.findElement(By.xpath("(//a[@class='tn-atom'])[1]"));
-        detay3.click();
-        // Assert.assertTrue(technoStudy.isDisplayed());
+        Assert.assertTrue(driver.getCurrentUrl().contains("data"));
         driver.navigate().back();
 
+        WebElement masters=driver.findElement(By.linkText("Master's Program"));
+        masters.click();
 
-        //////
+        Assert.assertTrue(driver.getCurrentUrl().contains("masters"));
+        driver.navigate().back();
 
     }
 
