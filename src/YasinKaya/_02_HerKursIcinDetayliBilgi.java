@@ -42,7 +42,8 @@ public class _02_HerKursIcinDetayliBilgi extends BaseDriver {
        // Assert.assertTrue(technoStudy.isDisplayed());
         driver.navigate().back();
 
-        //
+
+        ////
 
 
 
