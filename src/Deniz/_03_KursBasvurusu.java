@@ -73,7 +73,7 @@ public class _03_KursBasvurusu extends BaseDriver {
         gonderBtn.click();
 
         //MyFunc.Bekle(15);
-        WebElement onayMsg=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[ contains( text(), 'Başvurunuz alınmıştır' )]")));
+        WebElement onayMsg=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"tildaformsuccesspopuptext\"]/p[1]/span")));
         //WebElement onayMsg = driver.findElement(By.xpath("//*[ contains( text(), 'Başvurunuz alınmıştır' )]"));
         //System.out.println(onayMsg.getText());
         Assert.assertTrue(onayMsg.isDisplayed(), "Onay mesajı görünmedi.");
