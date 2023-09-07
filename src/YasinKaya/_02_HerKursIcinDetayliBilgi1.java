@@ -1,7 +1,6 @@
 package YasinKaya;
 
 import Utility.BaseDriver;
-import Utility.MyFunc;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class _02_HerKursIcinDetayliBilgi extends BaseDriver {
+public class _02_HerKursIcinDetayliBilgi1 extends BaseDriver {
     @Test
     public void KursDetayBilgi(){
         driver.get("https://techno.study/tr/");

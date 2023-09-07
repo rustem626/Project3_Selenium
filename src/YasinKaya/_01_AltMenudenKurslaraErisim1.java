@@ -1,17 +1,12 @@
 package YasinKaya;
 
 import Utility.BaseDriver;
-import Utility.MyFunc;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.util.List;
-
-public class _01_AltMenudenKurlaraErisim extends BaseDriver {
+public class _01_AltMenudenKurslaraErisim1 extends BaseDriver {
 
     @Test
     public void AltMenuErisim(){
