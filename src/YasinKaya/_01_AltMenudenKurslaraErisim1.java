@@ -38,7 +38,7 @@ public class _01_AltMenudenKurslaraErisim1 extends BaseDriver {
         driver.navigate().back();
 
 
-        ////
+        //////
 
 
 

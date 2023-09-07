@@ -42,7 +42,7 @@ public class _02_HerKursIcinDetayliBilgi1 extends BaseDriver {
         driver.navigate().back();
 
 
-        ////
+        //////
 
 
 
